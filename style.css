@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+
+a:not(#mdn) {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar header {
+    margin-block: 0.6rem;
+    font-size: 2rem;
+    text-align: center;
+}
+#navbar {
+    border: none;
+    border-bottom: 1px solid;
+}
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 225px;
+    list-style-type: none;
+}
+#navbar li {
+    border-top: 1px solid black;
+}
+.nav-link {
+    padding-block: 0.8rem;
+    padding-inline: 1.8rem 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#main-doc {
+    padding: 1.2rem 1.7rem;
+}
+
+#main-doc header {
+    font-size: 2rem;
+}
+#main-doc article {
+    margin: 1rem;
+}
+#main-doc ul {
+    margin-left: 1rem;
+}
+#main-doc .code {
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 1rem;
+    background-color: #f7f7f7;
+}
+#main-doc code {
+    width: 60%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#main-doc .inner-ul {
+    margin-block: 1rem 0.5rem;
+    margin-left: 0;
+    list-style-type: circle;
+}
+footer .author-info {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 1rem;
+}
+
+@media (max-width: 400px) {
+    #main-doc header {
+        font-size: 1.5rem;
+    }
+    ul {
+        padding: 0;
+        padding-left: 1rem;
+    }
+    #main-doc {
+        padding: 0.5rem;
+    }
+    #main-doc ul {
+        margin-left: 0;
+    }
+    #main-doc code {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+    #main-doc .code {
+        width: 90%;
+        border-radius: 0.5rem;
+        padding: 0.8rem 0.3rem;
+        margin: 0;
+        margin-inline: auto;
+        background-color: #f7f7f7;
+    }
+    #main-doc .inner-ul {
+        margin-left: 0;
+        list-style-type: circle;
+    }
+    footer .author-info {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 815px) {
+    #navbar{
+        border-right: 3px solid rgba(0, 22, 22, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 28%;
+    }
+    #navbar header p{
+        margin-block: 0;
+    }
+    #navbar ul {
+        border-right: none;
+        overflow: auto;
+        height: 100%;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 930px) {
+    #navbar {
+        width: 25%;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 27%;
+    }
+}
